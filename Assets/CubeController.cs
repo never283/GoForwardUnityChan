@@ -12,13 +12,6 @@ public class CubeController : MonoBehaviour
 
 
 
-    // 地面の位置
-    private float groundLevel = -3.0f;
-
-    //当たり判定
-    bool hit_FLG;
-
-
     // Use this for initialization
     void Start()
     {
@@ -40,45 +33,7 @@ public class CubeController : MonoBehaviour
     }
 
 
-   
-
-    void OnCollisionEnter(Collision hit)
-    {
-        if(hit_FLG == true)
-        {
-            if (hit.gameObject.tag == "Load")
-            {
-
-                GetComponent<AudioClip>();
-
-            }
-
-
-            if (hit.gameObject.tag == "Cube")
-            {
-
-                GetComponent<AudioClip>();
-
-            }
-
-            if (hit.gameObject.tag == "UnityChan")
-            {
-
-                GetComponent<AudioSource>().volume = 0;
-
-            }
-
-
-
-        }
-
-
-    }
-
-
-
-
-
-
-
 }
+
+
+
